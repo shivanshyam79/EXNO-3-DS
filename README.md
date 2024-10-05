@@ -32,8 +32,8 @@ We use this categorical data encoding technique when the features are nominal(do
 
 # CODING AND OUTPUT:
 ```
-Developed by : ANIRUDH R 
-Reg No : 212223230016
+Developed by : shyam R 
+Reg No : 212223040200
 ```
 
 ```python
