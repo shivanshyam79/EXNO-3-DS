@@ -37,7 +37,7 @@ df=pd.read_csv("/content/Encoding Data.csv")
 
 df
 ```
-image:![image](https://github.com/user-attachments/assets/571f35e5-acdf-433e-9c0d-01ca0f0fe089)
+![image](https://github.com/user-attachments/assets/571f35e5-acdf-433e-9c0d-01ca0f0fe089)
 
 ```
 from sklearn.preprocessing import LabelEncoder,OrdinalEncoder
@@ -48,14 +48,14 @@ e1=OrdinalEncoder(categories=[pm])
 
 e1.fit_transform(df[["ord_2"]])
 ```
-image:![image](https://github.com/user-attachments/assets/880966da-a533-42be-bcf0-2aab1296b9b4)
+![image](https://github.com/user-attachments/assets/880966da-a533-42be-bcf0-2aab1296b9b4)
 
 ```
 df['bo2']=e1.fit_transform(df[["ord_2"]])
 
 df
 ```
-image:![image](https://github.com/user-attachments/assets/8783be74-57b1-45f8-a64d-22c6457b4357)
+![image](https://github.com/user-attachments/assets/8783be74-57b1-45f8-a64d-22c6457b4357)
 
 ```
 le=LabelEncoder()
@@ -66,7 +66,7 @@ dfc['ord_2']=le.fit_transform(dfc['ord_2'])
 
 dfc
 ```
-image:![image](https://github.com/user-attachments/assets/ce5e3e5a-4e23-415f-9c30-89c2a7d27733)
+![image](https://github.com/user-attachments/assets/ce5e3e5a-4e23-415f-9c30-89c2a7d27733)
 
 ```
 from sklearn.preprocessing import OneHotEncoder
@@ -91,17 +91,17 @@ df2=pd.concat([df2,enc],axis=1)
 
 df2
 ```
-image:![image](https://github.com/user-attachments/assets/ebca803c-a426-4d22-bf76-43044f0d4da3)
+![image](https://github.com/user-attachments/assets/ebca803c-a426-4d22-bf76-43044f0d4da3)
 
 ```
 pd.get_dummies(df2,columns=["nom_0"])
 
-image:![image](https://github.com/user-attachments/assets/085edf39-b19a-48fb-a5a1-71534ef26b5d)
+![image](https://github.com/user-attachments/assets/085edf39-b19a-48fb-a5a1-71534ef26b5d)
 
 ```
 pip install --upgrade category_encoders
 ```
-image:![image](https://github.com/user-attachments/assets/76449c34-113f-4e84-b035-573cc83a5021)
+![image](https://github.com/user-attachments/assets/76449c34-113f-4e84-b035-573cc83a5021)
 
 ```
 from category_encoders import BinaryEncoder
@@ -110,7 +110,7 @@ df=pd.read_csv("/content/data.csv")
 
 df
 ```
-image:![image](https://github.com/user-attachments/assets/1ba3a41e-817e-410b-8d31-194870134df0)
+![image](https://github.com/user-attachments/assets/1ba3a41e-817e-410b-8d31-194870134df0)
 
 ```
 be=BinaryEncoder()
@@ -123,7 +123,7 @@ dfb1=df.copy()
 
 dfb
 ```
-image:![image](https://github.com/user-attachments/assets/fabe7799-1710-4d93-a7eb-56515ed30fd1)
+![image](https://github.com/user-attachments/assets/fabe7799-1710-4d93-a7eb-56515ed30fd1)
 
 ```
 from category_encoders import TargetEncoder
@@ -138,7 +138,7 @@ CC=pd.concat([CC,new],axis=1)
 
 CC
 ```
-image:![image](https://github.com/user-attachments/assets/d9809984-5afe-4360-9a0c-e0968ece18f9)
+![image](https://github.com/user-attachments/assets/d9809984-5afe-4360-9a0c-e0968ece18f9)
 
 ```
 import pandas as pd
@@ -151,44 +151,44 @@ df=pd.read_csv("/content/Data_to_Transform.csv")
 
 df
 ```
-image:![image](https://github.com/user-attachments/assets/ab3fae6d-ee58-43b6-8e18-033d114d25ad)
+![image](https://github.com/user-attachments/assets/ab3fae6d-ee58-43b6-8e18-033d114d25ad)
 
 ```
 df.skew()
 ```
-image:![image](https://github.com/user-attachments/assets/c5adb13e-77dc-4135-a8a3-9b2f50680db5)
+![image](https://github.com/user-attachments/assets/c5adb13e-77dc-4135-a8a3-9b2f50680db5)
 ```
 
 np.log(df["Highly Positive Skew"])
 ```
-image:![image](https://github.com/user-attachments/assets/0fe646f6-0d8d-4a9c-9d4e-64cd8ca40b60)
+![image](https://github.com/user-attachments/assets/0fe646f6-0d8d-4a9c-9d4e-64cd8ca40b60)
 
 ```
 np.reciprocal(df["Moderate Positive Skew"])
 ```
-image:![image](https://github.com/user-attachments/assets/3927b5d6-0810-402c-9ae6-7aa1a853ede2)
+![image](https://github.com/user-attachments/assets/3927b5d6-0810-402c-9ae6-7aa1a853ede2)
 
 ```
 np.sqrt(df["Highly Positive Skew"])
 ```
-image:![image](https://github.com/user-attachments/assets/5296b97a-ae8e-455e-8f01-a5bd2315daca)
+![image](https://github.com/user-attachments/assets/5296b97a-ae8e-455e-8f01-a5bd2315daca)
 ```
 
 np.square(df["Highly Positive Skew"])
 ```
-image:![image](https://github.com/user-attachments/assets/dd4a3d38-9426-440c-b1b0-a79e8d2c88b9)
+![image](https://github.com/user-attachments/assets/dd4a3d38-9426-440c-b1b0-a79e8d2c88b9)
 
 ```
 df["Highly Positive Skew_boxcox"], parameters=stats.boxcox(df["Highly Positive Skew"])
 
 df
 ```
-image:![image](https://github.com/user-attachments/assets/854a73c3-740b-46e9-9e01-e7a884ec1994)
+![image](https://github.com/user-attachments/assets/854a73c3-740b-46e9-9e01-e7a884ec1994)
 
 ```
 df["Moderate Negative Skew_yeojohnson"],parameters=stats.yeojohnson(df["Moderate Negative Skew"])
 ```
-image:![image](https://github.com/user-attachments/assets/9162f132-e205-4929-86c1-60f2a40601c5)
+![image](https://github.com/user-attachments/assets/9162f132-e205-4929-86c1-60f2a40601c5)
 
 ```
 import seaborn as sns
@@ -201,14 +201,14 @@ sm.qqplot(df["Moderate Negative Skew"],line='45')
 
 plt.show()
 ```
-image:![image](https://github.com/user-attachments/assets/61e24e56-3f36-4865-9a9d-d7dd1447c227)
+![image](https://github.com/user-attachments/assets/61e24e56-3f36-4865-9a9d-d7dd1447c227)
 
 ```
 sm.qqplot(np.reciprocal(df["Moderate Negative Skew"]),line='45')
 
 plt.show()
 ```
-image:![image](https://github.com/user-attachments/assets/2b57c33d-a932-40d4-be79-622b864b52c5)
+![image](https://github.com/user-attachments/assets/2b57c33d-a932-40d4-be79-622b864b52c5)
 
 ```
 from sklearn.preprocessing import QuantileTransformer
@@ -221,7 +221,7 @@ sm.qqplot(df["Moderate Negative Skew"],line='45')
 
 plt.show()
 ```
-image:![image](https://github.com/user-attachments/assets/3aaba885-f18d-4108-800e-e46dd210ca51)
+![image](https://github.com/user-attachments/assets/3aaba885-f18d-4108-800e-e46dd210ca51)
 
 ```
 df["Highly Negative Skew_1"]=qt.fit_transform(df[["Highly Negative Skew"]])
@@ -230,21 +230,21 @@ sm.qqplot(df["Highly Negative Skew"],line='45')
 
 plt.show()
 ```
-image:![image](https://github.com/user-attachments/assets/0f18216b-dc7c-48a5-b0d6-be5471855f9c)
+![image](https://github.com/user-attachments/assets/0f18216b-dc7c-48a5-b0d6-be5471855f9c)
 ```
 
 sm.qqplot(df["Highly Negative Skew_1"],line='45')
 
 plt.show()
 ```
-image:![image](https://github.com/user-attachments/assets/f5822016-d86c-4777-b2d0-b22c43794ebf)
+![image](https://github.com/user-attachments/assets/f5822016-d86c-4777-b2d0-b22c43794ebf)
 
 ```
 sm.qqplot(np.reciprocal(df["Moderate Negative Skew"]),line='45')
 
 plt.show()
 ```
-image:![image](https://github.com/user-attachments/assets/68805865-502a-451b-8723-22e51cda3605)
+![image](https://github.com/user-attachments/assets/68805865-502a-451b-8723-22e51cda3605)
 
 
 ## RESULT:
