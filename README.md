@@ -98,6 +98,7 @@ df2
 ```
 pd.get_dummies(df2,columns=["nom_0"])
 
+```
 ![image](https://github.com/user-attachments/assets/085edf39-b19a-48fb-a5a1-71534ef26b5d)
 
 ```
@@ -155,12 +156,8 @@ df
 ```
 ![image](https://github.com/user-attachments/assets/ab3fae6d-ee58-43b6-8e18-033d114d25ad)
 
-```
 df.skew()
-```
 ![image](https://github.com/user-attachments/assets/c5adb13e-77dc-4135-a8a3-9b2f50680db5)
-```
-
 np.log(df["Highly Positive Skew"])
 ```
 ![image](https://github.com/user-attachments/assets/0fe646f6-0d8d-4a9c-9d4e-64cd8ca40b60)
