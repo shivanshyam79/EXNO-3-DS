@@ -37,7 +37,9 @@ df=pd.read_csv("/content/Encoding Data.csv")
 
 df
 ```
+
 ![image](https://github.com/user-attachments/assets/571f35e5-acdf-433e-9c0d-01ca0f0fe089)
+
 
 ```
 from sklearn.preprocessing import LabelEncoder,OrdinalEncoder
